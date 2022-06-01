@@ -1,0 +1,10 @@
+﻿  Account.cpp
+  main.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP-Object\main.cpp(118,5): error C2059: syntax error: '/'
+  MyClass.cpp
+  Shape.cpp
+  Student.cpp
+  ThisExample1.cpp
+  Generating Code...
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP-Object\Shape.cpp(81): warning C4715: 'Triangle::checkDimensionsForTriangle': not all control paths return a value
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP-Object\Account.cpp(48): warning C4715: 'Account::withdraw': not all control paths return a value

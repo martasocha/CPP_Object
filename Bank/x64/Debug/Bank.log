@@ -1,0 +1,3 @@
+﻿  Bank.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Bank\Bank.cpp(79,7): warning C4930: 'Bank inMethod(void)': prototyped function not called (was a variable definition intended?)
+  Bank.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\x64\Debug\Bank.exe
