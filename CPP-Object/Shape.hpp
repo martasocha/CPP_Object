@@ -1,15 +1,23 @@
 #pragma once
 
+struct Point
+{
+    int x, y;
+};
+
 class Rectangle 
 {
     int a = 0, b = 0;
 public:
     Rectangle(); // konstruktor bezparametrowy, bezargumentowy
     Rectangle(int a, int b); //konstruktor parametrowy
+    Rectangle(Point ur, Point ll);
     void setDimension(int x, int y);
     int getField();
     int getCircuit();
+
 };
+
 
 class Circle
 {

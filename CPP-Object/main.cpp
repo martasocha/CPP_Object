@@ -14,12 +14,26 @@ void zad1()
 
     std::cout << value << " " << value2 << std::endl;
 
-    Rectangle rect; //brakuje bezparametrowego konstruktora
-    rect.setDimension(3, 7); // a co gdybysmy pobrali wymiary od uzytkownika
+    //Rectangle rect; //brakuje bezparametrowego konstruktora
+    //rect.setDimension(3, 7); // a co gdybysmy pobrali wymiary od uzytkownika
+    //std::cout << "Rectangle: " << rect.getField() << " " << rect.getCircuit() << std::endl;
+
+    //Rectangle rect2(5, 8);
+    //std::cout << "Rectangle: "<< rect2.getField() << " " << rect2.getCircuit() << std::endl;
+
+    Point ur;
+    ur.x = 10; 
+    ur.y = 6;
+
+    Point ll;
+    ll.x = 3;
+    ll.y = 3;
+    Rectangle rect(Point ur, Point ll);
     std::cout << "Rectangle: " << rect.getField() << " " << rect.getCircuit() << std::endl;
 
-    Rectangle rect2(5, 8);
-    std::cout << "Rectangle: "<< rect2.getField() << " " << rect2.getCircuit() << std::endl;
+
+    //Rectangle rect3(5, 8);
+    //std::cout << "Rectangle: " << rect2.getField() << " " << rect2.getCircuit() << std::endl;
     
     // pobranie wymairow prostokata od uzytkownika
     //Rectangle rect3;
@@ -30,8 +44,8 @@ void zad1()
     int b1;
     std::cin >> b1;
     //rect3.setDimension(a1, b1);
-    Rectangle rect3(a1, b1);
-    std::cout << "Rectangle: " << rect3.getField() << " " << rect3.getCircuit() << std::endl;
+    //Rectangle rect3(a1, b1);
+    //std::cout << "Rectangle: " << rect3.getField() << " " << rect3.getCircuit() << std::endl;
     
     Circle circ;
     circ.setDimension(5);
@@ -104,8 +118,8 @@ void zad3()
 
 int main()
 {
-    //std::cout << "Zadanie 2.1:" << std::endl;
-    //zad1();
+    std::cout << "Zadanie 2.1:" << std::endl;
+    zad1();
 
     //std::cout << std::endl;
 
@@ -114,6 +128,6 @@ int main()
 
     //std::cout << std::endl;
 
-    std::cout << "Zadanie 2.3:" << std::endl;
-    /zad3();
+    //std::cout << "Zadanie 2.3:" << std::endl;
+    //zad3();
 }

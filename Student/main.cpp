@@ -7,15 +7,15 @@ int main()
     Student student1(size);
     std::cout << student1.setPersonalData("Jan", "Nowak") << std::endl;
     int* tabOfGrades = nullptr;
-    tabOfGrades = student1.setGrades(size);
+    //tabOfGrades = student1.setGrades(size);
     int newGrade = 5;
-    student1.addGrade(newGrade,tabOfGrades,newGrade);
+    student1.addGrade(size,newGrade);
     
     int newGrade2 = 4;
-    student1.addGrade(newGrade,tabOfGrades, newGrade2);
+    student1.addGrade(size, newGrade2);
 
     int newGrade3 = 4;
-    student1.addGrade(newGrade, tabOfGrades, newGrade3);
+    student1.addGrade(size, newGrade3);
    
     for (int i = 0; i < size; ++i)
     {
@@ -23,8 +23,8 @@ int main()
     }
     std::cout << std::endl;
     double gradesAverage = 0;
-    gradesAverage = student1.showGradeAverage(size, tabOfGrades);
+    gradesAverage = student1.showGradeAverage(size);
     std::cout << "Average grade: " << gradesAverage << std::endl;
-    delete[]tabOfGrades;
-    tabOfGrades = nullptr;
+    //delete[]tabOfGrades;
+    //tabOfGrades = nullptr;
 }

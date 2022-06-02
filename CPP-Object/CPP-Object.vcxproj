@@ -142,6 +142,7 @@
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyClass.cpp" />
+    <ClCompile Include="NestedClass.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="ThisExample1.cpp" />

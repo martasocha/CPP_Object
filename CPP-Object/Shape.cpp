@@ -12,6 +12,14 @@ Rectangle::Rectangle(int a, int b)
 	this->b = b;
 }
 
+Rectangle::Rectangle(Point ur, Point ll)
+{
+	this->a = ur.x - ll.x;
+	this->b = ur.y - ll.y;
+
+}
+
+
 void Rectangle::setDimension(int x, int y)
 {
 	a = x;
@@ -61,24 +69,24 @@ int Triangle::maxDimension(int x, int y, int z)
 }
 
 
-bool Triangle::checkDimensionsForTriangle(int x, int y, int z)
-{
-	if (x == y && x == z)
-	{
-		return true;
-	}
-	else if (maxDimension(x, y, z) == x || maxDimension(x, y, z) == y || maxDimension(x, y, z) == z)
-	{
-		if (maxDimension(x, y, z) < (x + y + z) - maxDimension(x, y, z))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-}
+//bool Triangle::checkDimensionsForTriangle(int x, int y, int z)
+//{
+//	if (x == y && x == z)
+//	{
+//		return true;
+//	}
+//	else if (maxDimension(x, y, z) == x || maxDimension(x, y, z) == y || maxDimension(x, y, z) == z)
+//	{
+//		if (maxDimension(x, y, z) < (x + y + z) - maxDimension(x, y, z))
+//		{
+//			return true;
+//		}
+//		else
+//		{
+//			return false;
+//		}
+//	}
+//}
 
 void Triangle::setDimension(int x, int y, int z, int height)
 {

@@ -5,10 +5,12 @@ class Student {
 	std::string name, surname;
 	int numOfGrades = 0;
 	int grade = 0;
+	int* grades_ptr = nullptr;
 public:
 	Student(int numOfGrades);
-	int* addGrade(int numOfGrades, int* grades_ptr, int grade);
-	double showGradeAverage(int numOfGrades, int* grades_ptr);
+	~Student();
+	void addGrade(int numOfGrades, int grade);
+	double showGradeAverage(int numOfGrades);
 	std::string setPersonalData(std::string studentName, std::string studentSurname);
-	int* setGrades(int numOfGrades);
+	
 };

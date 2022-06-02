@@ -5,31 +5,43 @@
 Student::Student(int numOfGrades)
 {
 	this->numOfGrades = numOfGrades;
-}
-
-std::string Student::setPersonalData(std::string studentName, std::string studentSurname)
-{
-	std::string personalData = "";
-	name = studentName;
-	surname = studentSurname;
-
-	personalData = name + " " + surname;
-	return personalData;
-}
-
-int* Student::setGrades(int numOfGrades)
-{
-	int* grades_ptr = nullptr;
-	grades_ptr = new int[numOfGrades];
+	int* grades_ptr = new int[numOfGrades];
 	for (int i = 0; i < numOfGrades; ++i)
 	{
 		grades_ptr[i] = 0;
 	}
-	return grades_ptr;
 }
 
+Student::~Student()
+{
+	delete[]grades_ptr;
+	grades_ptr = nullptr;
+}
 
-int* Student::addGrade(int numOfGrades, int* grades_ptr, int grade)
+std::string Student::setPersonalData(std::string studentName, std::string studentSurname)
+{
+	//std::string personalData = "";
+	name = studentName;
+	surname = studentSurname;
+
+	//personalData = name + " " + surname;
+	return name + " " + surname;
+}
+
+//int* Student::setGrades(int numOfGrades)
+//{
+//	//int* grades_ptr = nullptr;
+//	
+//	for (int i = 0; i < numOfGrades; ++i)
+//	{
+//		grades_ptr[i] = 0;
+//	}
+//	return grades_ptr;
+//
+//}
+
+
+void Student::addGrade(int numOfGrades, int grade)
 {
 	for (int i = 0; i < numOfGrades; ++i)
 	{
@@ -39,10 +51,9 @@ int* Student::addGrade(int numOfGrades, int* grades_ptr, int grade)
 			break;
 		}
 	}
-	return grades_ptr;
 }
 
-double Student::showGradeAverage(int numOfGrades, int* grades_ptr)
+double Student::showGradeAverage(int numOfGrades)
 {
 	double sum = 0;
 	double average = 0;
