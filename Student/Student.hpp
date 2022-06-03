@@ -9,7 +9,7 @@ class Student {
 public:
 	Student(int numOfGrades);
 	~Student();
-	void addGrade(int numOfGrades, int grade);
+	void addGrade(int grade);
 	double showGradeAverage(int numOfGrades);
 	std::string setPersonalData(std::string studentName, std::string studentSurname);
 	

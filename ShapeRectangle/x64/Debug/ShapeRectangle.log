@@ -1,0 +1,35 @@
+﻿  main.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,3): error C3927: '->': trailing return type is not allowed after a non-function declarator
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,3): error C3484: syntax error: expected '->' before the return type
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,4): error C3613: missing return type after '->' ('int' assumed)
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,1): error C2371: 'ur': redefinition; different basic types
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(4): message : see declaration of 'ur'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(5,4): error C2146: syntax error: missing ';' before identifier 'x'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,3): error C3927: '->': trailing return type is not allowed after a non-function declarator
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,3): error C3484: syntax error: expected '->' before the return type
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,4): error C3613: missing return type after '->' ('int' assumed)
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,1): error C2371: 'ur': redefinition; different basic types
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(4): message : see declaration of 'ur'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(6,4): error C2146: syntax error: missing ';' before identifier 'y'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,3): error C3927: '->': trailing return type is not allowed after a non-function declarator
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,3): error C3484: syntax error: expected '->' before the return type
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,4): error C3613: missing return type after '->' ('int' assumed)
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,1): error C2371: 'll': redefinition; different basic types
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(8): message : see declaration of 'll'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(9,4): error C2146: syntax error: missing ';' before identifier 'x'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,3): error C3927: '->': trailing return type is not allowed after a non-function declarator
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,3): error C3484: syntax error: expected '->' before the return type
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,4): error C3613: missing return type after '->' ('int' assumed)
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,1): error C2371: 'll': redefinition; different basic types
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(8): message : see declaration of 'll'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(10,4): error C2146: syntax error: missing ';' before identifier 'y'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(12,11): error C2143: syntax error: missing ';' before '<<'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(12,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\ShapeRectangle\main.cpp(12,6): error C2371: 'std::cout': redefinition; different basic types
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\iostream(40): message : see declaration of 'std::cout'
+  ShapeRectangle.cpp
+  Generating Code...

@@ -43,7 +43,7 @@ class Triangle
     int a = 0, b = 0, c = 0, h = 0;
 public:
     int maxDimension(int x, int y, int z);
-    bool checkDimensionsForTriangle(int x, int y, int z);
+    //bool checkDimensionsForTriangle(int x, int y, int z);
     void setDimension(int x, int y, int z, int height);
     int getField();
     int getCircuit();

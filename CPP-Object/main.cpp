@@ -21,14 +21,18 @@ void zad1()
     //Rectangle rect2(5, 8);
     //std::cout << "Rectangle: "<< rect2.getField() << " " << rect2.getCircuit() << std::endl;
 
-    Point ur;
-    ur.x = 10; 
-    ur.y = 6;
+    Point ur
+    {
+    ur.x = 10,
+    ur.y = 6,
+    };
 
-    Point ll;
-    ll.x = 3;
-    ll.y = 3;
-    Rectangle rect(Point ur, Point ll);
+    Point ll
+    {
+    ll.x = 3,
+    ll.y = 3,
+    };
+    Rectangle rect(ur,ll);
     std::cout << "Rectangle: " << rect.getField() << " " << rect.getCircuit() << std::endl;
 
 
@@ -55,20 +59,20 @@ void zad1()
     std::cout << "Circle2: " << circ2.getField2() << " " << circ2.getCircuit2() << std::endl;
 
 
-    Triangle tria;
-    int a = 3;
-    int b = 4;
-    int c = 5;
-    int h = 4;
-    if (tria.checkDimensionsForTriangle(a,b,c))
-    {
-        tria.setDimension(a, b, c, h);
-        std::cout << "Triangle: " << tria.getField() << " " << tria.getCircuit() << std::endl;
-    }
-    else
-    {
-        std::cout << "This triangle does not exist" << std::endl;
-    }
+    //Triangle tria;
+    //int a = 3;
+    //int b = 4;
+    //int c = 5;
+    //int h = 4;
+    //if (tria.checkDimensionsForTriangle(a,b,c))
+    //{
+    //    tria.setDimension(a, b, c, h);
+    //    std::cout << "Triangle: " << tria.getField() << " " << tria.getCircuit() << std::endl;
+    //}
+    //else
+    //{
+    //    std::cout << "This triangle does not exist" << std::endl;
+    //}
 }
 
 void zad2()
@@ -82,8 +86,19 @@ void zad2()
     int cash = prv.withdraw(100); //balance = 50, cash = 100
     std::cout << "Account balance: " << prv.getBalance() << std::endl;
     cash = prv.withdraw(100); //balnce = 0, cash = 50
-    std::cout << "Account balance: " << prv.getBalance() << " " << cash << std::endl;
+    std::cout << "Account balance: " << prv.getBalance() << " " << cash << std::endl << std::endl;
     //int cash = prv.withdraw(-10); //warto obsluzyc
+
+    std::cout << "Zad 4.2" << std::endl;
+    Account businessAccount;
+    Account::AccountType type  = Account::AccountType::business;
+    std::cout << "Monthly cost of account: " << businessAccount.showAccountCosts(type) << std::endl;
+
+    Account privateAccount;
+    Account::AccountType type2 = Account::AccountType::privat;
+    std::cout << "Monthly cost of account: " << privateAccount.showAccountCosts(type2) << std::endl;
+
+
 }
 
 void zad3()
@@ -118,13 +133,13 @@ void zad3()
 
 int main()
 {
-    std::cout << "Zadanie 2.1:" << std::endl;
-    zad1();
+    //std::cout << "Zadanie 2.1:" << std::endl;
+    //zad1();
 
     //std::cout << std::endl;
 
-    //std::cout << "Zadanie 2.2:" << std::endl;
-    //zad2();
+    std::cout << "Zadanie 2.2:" << std::endl;
+    zad2();
 
     //std::cout << std::endl;
 

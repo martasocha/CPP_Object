@@ -5,7 +5,7 @@
 Student::Student(int numOfGrades)
 {
 	this->numOfGrades = numOfGrades;
-	int* grades_ptr = new int[numOfGrades];
+	grades_ptr = new int[numOfGrades];
 	for (int i = 0; i < numOfGrades; ++i)
 	{
 		grades_ptr[i] = 0;
@@ -14,7 +14,7 @@ Student::Student(int numOfGrades)
 
 Student::~Student()
 {
-	delete[]grades_ptr;
+	delete[] grades_ptr;
 	grades_ptr = nullptr;
 }
 
@@ -41,7 +41,7 @@ std::string Student::setPersonalData(std::string studentName, std::string studen
 //}
 
 
-void Student::addGrade(int numOfGrades, int grade)
+void Student::addGrade(int grade)
 {
 	for (int i = 0; i < numOfGrades; ++i)
 	{
