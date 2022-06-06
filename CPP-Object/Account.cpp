@@ -5,11 +5,12 @@
 //zwraca staly numer
 
 
-Account::Account()
+
+Account::Account(AccountType type)
 {
+	this->type = type;
 	number = generateBankNumber();
 }
-
 
 std::string Account::showBankNumber()
 {
@@ -65,7 +66,7 @@ int Account::getBalance()
 }
 
 
-int Account::showAccountCosts(AccountType type)
+int Account::showAccountCosts()
 {
 	if (type == AccountType::business)
 	{

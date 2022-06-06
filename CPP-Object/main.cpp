@@ -77,7 +77,7 @@ void zad1()
 
 void zad2()
 {
-    Account prv;
+    Account prv(AccountType::savings);
     std::cout << "Bank number: " << prv.showBankNumber() << std::endl;
 
     prv.deposit(150); //150
@@ -90,13 +90,11 @@ void zad2()
     //int cash = prv.withdraw(-10); //warto obsluzyc
 
     std::cout << "Zad 4.2" << std::endl;
-    Account businessAccount;
-    Account::AccountType type  = Account::AccountType::business;
-    std::cout << "Monthly cost of account: " << businessAccount.showAccountCosts(type) << std::endl;
+    Account businessAccount(AccountType::business);
+    std::cout << "Monthly cost of account: " << businessAccount.showAccountCosts() << std::endl;
 
-    Account privateAccount;
-    Account::AccountType type2 = Account::AccountType::privat;
-    std::cout << "Monthly cost of account: " << privateAccount.showAccountCosts(type2) << std::endl;
+    Account privateAccount(AccountType::privat);
+    std::cout << "Monthly cost of account: " << privateAccount.showAccountCosts() << std::endl;
 
 
 }

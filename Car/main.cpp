@@ -4,10 +4,10 @@
 int main()
 {
     std::cout << "Zad 4.3" << std::endl;
-    Car::Engine car1;
+    Car car1(EngineType::Diesel);
 
-    Car::Engine::EngineType type = Car::Engine::EngineType::Diesel;
-    car1.changeOil(type);
-    car1.carService(type);
+    car1.carService();
+    car1.changeOil();
+    
 
 }

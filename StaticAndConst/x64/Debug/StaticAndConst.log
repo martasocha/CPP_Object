@@ -1,0 +1,4 @@
+﻿  Car.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\StaticAndConst\Car.cpp(21,17): error C2677: binary '==': no global operator found which takes type 'EngineType' (or there is no acceptable conversion)
+  main.cpp
+  Generating Code...

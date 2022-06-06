@@ -1,18 +1,24 @@
 #pragma once
 
-class Car {
+enum class EngineType
+{
+	Diesel,
+	Petrol,
+	Gas
+};
 
-public:
+class Car {
 	class Engine {
 	public:
 		double engineCapacity;
-		enum class EngineType : char
-		{
-			Diesel,
-			Petrol,
-			Gas
-		};
-		void changeOil(EngineType type);
-		void carService(EngineType type);
+		void changeOil();
+		
 	};
+	
+public:
+	Engine engine;
+	EngineType type;
+	Car(EngineType type);
+	void carService();
+	void changeOil();
 };

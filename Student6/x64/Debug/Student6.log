@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.hpp(8,11): error C3646: 'promoter': unknown override specifier
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.hpp(8,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\main.cpp(7,14): error C2374: 'janNowak': redefinition; multiple initialization
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\main.cpp(6): message : see declaration of 'janNowak'
+  Student6.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.hpp(8,11): error C3646: 'promoter': unknown override specifier
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.hpp(8,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.cpp(6,1): error C2512: 'Promoter': no appropriate default constructor available
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.hpp(5,7): message : see declaration of 'Promoter'
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.cpp(7,2): error C2065: 'promoter': undeclared identifier
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.cpp(8,2): error C2065: 'promoter': undeclared identifier
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.cpp(13,2): error C2065: 'student': undeclared identifier
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Student6\Student6.cpp(14,2): error C2065: 'student': undeclared identifier
+  Generating Code...

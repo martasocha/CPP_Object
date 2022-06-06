@@ -4,36 +4,51 @@
 #include <iostream>
 #include "Car.hpp"
 
-
-void Car::Engine::changeOil(EngineType type)
+Car::Car(EngineType type)
 {
-
-    if (type == Car::Engine::EngineType::Diesel)
-    {
-        std::cout << "The oil was changed in a diesel engine" << std::endl;
-    }
-    else if (type == Car::Engine::EngineType::Petrol)
-    {
-        std::cout << "The oil was changed in a gasoline engine" << std::endl;
-    }
-    else if (type == Car::Engine::EngineType::Gas)
-    {
-        std::cout << "The oil was changed in a gas engine" << std::endl;
-    }
+    this->type = type;
 }
 
-void Car::Engine::carService(EngineType type)
+void Car::changeOil()
 {
-    if (type == Car::Engine::EngineType::Diesel)
+    engine.changeOil();
+}
+
+void Car::carService()
+{
+    if (type == EngineType::Diesel)
     {
         std::cout << "The diesel car is in the service" << std::endl;
     }
-    else if (type == Car::Engine::EngineType::Petrol)
+    else if (type == EngineType::Petrol)
     {
         std::cout << "The petrol car is in the service" << std::endl;
     }
-    else if (type == Car::Engine::EngineType::Gas)
+    else if (type == EngineType::Gas)
     {
         std::cout << "The gas car is in the service" << std::endl;
     }
 }
+
+
+void Car::Engine::changeOil()
+{
+    std::cout << "The oil was changled" << std::endl;
+}
+//void Car::Engine::changeOil()
+//{
+//
+//    if (type == EngineType::Diesel)
+//    {
+//        std::cout << "The oil was changed in a diesel engine" << std::endl;
+//    }
+//    else if (type == EngineType::Petrol)
+//    {
+//        std::cout << "The oil was changed in a gasoline engine" << std::endl;
+//    }
+//    else if (type == EngineType::Gas)
+//    {
+//        std::cout << "The oil was changed in a gas engine" << std::endl;
+//    }
+//}
+
