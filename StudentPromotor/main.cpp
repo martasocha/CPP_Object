@@ -4,9 +4,10 @@
 
 int main()
 {
-    Promotor promotor;
     Student dionizy;
+    Promotor promotor(&dionizy);
 
-    promotor.setStudent(dionizy)
-    return 0;
+    dionizy.setPromotor(&promotor);
+    dionizy.sendEmailToPromotor();
+    promotor.sendEmailToStudent();
 }
