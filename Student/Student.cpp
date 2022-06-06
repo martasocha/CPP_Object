@@ -15,30 +15,14 @@ Student::Student(int numOfGrades)
 Student::~Student()
 {
 	delete[] grades_ptr;
-	//grades_ptr = nullptr;
 }
 
 std::string Student::setPersonalData(std::string studentName, std::string studentSurname)
 {
-	//std::string personalData = "";
 	name = studentName;
 	surname = studentSurname;
-
-	//personalData = name + " " + surname;
 	return name + " " + surname;
 }
-
-//int* Student::setGrades(int numOfGrades)
-//{
-//	//int* grades_ptr = nullptr;
-//	
-//	for (int i = 0; i < numOfGrades; ++i)
-//	{
-//		grades_ptr[i] = 0;
-//	}
-//	return grades_ptr;
-//
-//}
 
 
 void Student::addGrade(int grade)

@@ -10,7 +10,7 @@ class Professors
 	int numOfProfessors = 5;
 public:
 	Professors(Student& student);
-	void setNames(std::string name[]);
+	//void setNames(std::string* names);
 	void receiveEmail(std::string emailCopy);
 
 };

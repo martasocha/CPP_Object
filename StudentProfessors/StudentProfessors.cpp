@@ -2,24 +2,25 @@
 #include<iostream>
 #include<string>
 
+int n = 0;
 Professors::Professors(Student& _student) : student(_student)
 {
 }
 
 
 
-void Professors::setNames(std::string name[])
-{
-	for (int i = 0; i < numOfProfessors; ++i)
-	{
-		this->name = name[i];
-	}
-}
+//void Professors::setNames(std::string* names)
+//{
+//	for (int i = 0; i < numOfProfessors; ++i)
+//	{
+//		this->name = &name[i];
+//	}
+//}
 
 
 void Professors::receiveEmail(std::string emailCopy)
 {
-	std::cout << "Profesor " << " odebral email: " << emailCopy << std::endl;
+	std::cout << "Profesor odebral email: " << emailCopy << std::endl;
 }
 
 void Student::setStudentName(std::string name)
@@ -33,6 +34,7 @@ void Student::sendEmailToProfessors()
 	{
 		std::cout << "Student wyslal mail do profesora " << i << std::endl;
 		professors->receiveEmail("Witam panie profesorze ");
+		n++;
 	}
 }
 
