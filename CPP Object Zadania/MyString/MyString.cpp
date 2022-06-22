@@ -32,7 +32,7 @@ MyString MyString::append(char* input)
 {
 	int lenghtArr = std::strlen(arr);
 	int lenghtInput = std::strlen(input);
-	int lenght = lenghtArr + lenghtInput + 1;
+	int lenght = lenghtArr + lenghtInput;
 	char* result = nullptr;
 	result = new char[lenght];
 
@@ -46,17 +46,14 @@ MyString MyString::append(char* input)
 	}
 
 	*(result + lenght) = '\0';
-	//duzo operacji
 	return MyString(result);
-	//return MyString(result);
+
 }
 
 void MyString::appendToSame(char* input)
 {
 	int lenghtArr = std::strlen(arr);
 	int lenght = std::strlen(arr) + std::strlen(input) - 1;
-	//char* result = nullptr;
-	//result = new char[lenght];
 
 	for (int i = 0; i < lenghtArr; ++i)
 	{
@@ -71,4 +68,35 @@ MyString MyString::append(MyString input)
 
 	return result;
 	// return append(input.arr);
+}
+
+void MyString::appendToSame(MyString input)
+{
+	append(input.arr);
+}
+
+MyString MyString::firstWord()
+{
+	char* firstWord = nullptr;
+	const int size = 7;
+	firstWord = new char[size];
+	//for (int i = 0; i < size; ++i)
+	//{
+	//	*(firstWord + i) = ' ';
+	//}
+	for (int i = 0; i < size; ++i)
+	{
+		if (*(arr + i) != 32)
+		{
+			*(firstWord + i) = *(arr + i);
+
+		}
+		else
+		{
+			break;
+		}
+	}
+
+
+	return MyString(firstWord);
 }

@@ -1,2 +1,9 @@
 ﻿  main.cpp
-  MyString.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP Object Zadania\x64\Debug\MyString.exe
+  MyString.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(12,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(33,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(34,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(55,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(56,56): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  MyString.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\x64\Debug\MyString.exe
