@@ -2,11 +2,6 @@
 
 int Car::count = 0;
 
-//Car::Car()
-//{
-//	this->no = count;
-//	count++;
-//}
 
 Car::Car(Mark mark)
 {

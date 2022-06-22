@@ -6,4 +6,5 @@
   Student.cpp
   ThisExample1.cpp
   Generating Code...
-  CPP-Object.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\x64\Debug\CPP-Object.exe
+Account.obj : error LNK2001: unresolved external symbol "public: static enum AccountType Account::type" (?type@Account@@2W4AccountType@@A)
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\x64\Debug\CPP-Object.exe : fatal error LNK1120: 1 unresolved externals

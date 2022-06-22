@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 #pragma once
 
 enum class Mark
@@ -16,10 +15,10 @@ class Car
 {
 	int no;
 	static int count;
+	Mark mark;
 
 public:
 	Car(Mark mark);
-	Mark mark;
 	int getNumber();
 	static int getCount();
 };

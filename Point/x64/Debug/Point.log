@@ -1,0 +1,6 @@
+﻿  Point.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Point\Point.cpp(39,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+  Generating Code...
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\Point\Point.cpp(41): warning C4715: 'Point2D::ShowTheDistance': not all control paths return a value
+  Point.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\x64\Debug\Point.exe

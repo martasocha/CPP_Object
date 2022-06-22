@@ -5,10 +5,16 @@
 #include "StudentPromotor.hpp"
 
 
-Promotor::Promotor(Student* student)
+Promotor::Promotor(Student1* student)
 {
     this->student = student;
 }
+
+Promotor::~Promotor()
+{
+    std::cout << "Promotor umiera" << std::endl;
+}
+
 
 void Promotor::setName(std::string name)
 {
@@ -26,23 +32,45 @@ void Promotor::sendEmailToStudent()
     student->receiveEmail("Prosze wyslac prace inzynierska");
 }
 
-void Student::setName(std::string name)
+Student1::Student1(int yearOfBirth)
+{
+    this->yearOfBirth = yearOfBirth;
+}
+
+std::string Student1::getLanguage(int yearOfBirth)
+{
+    if (yearOfBirth < 1970)
+    {
+        return "rosyjski";
+    }
+    else
+    {
+        return "angielski";
+    }
+}
+
+int Student1::getBirthYear() const
+{
+    return birthYear;
+}
+
+void Student1::setName(std::string name)
 {
     this->name = name;
 }
 
-void Student::setPromotor(Promotor* promotor)
+void Student1::setPromotor(Promotor* promotor)
 {
     this->promotor = promotor;
 }
 
-void Student::sendEmailToPromotor()
+void Student1::sendEmailToPromotor()
 {
     std::cout << "Student wysyla maila " << std::endl;
     promotor->receiveEmail("Witam");
 }
 
-void Student::receiveEmail(std::string emailCopy)
+void Student1::receiveEmail(std::string emailCopy)
 {
     std::cout << "Student odebral maila: " << emailCopy << std::endl;
 }

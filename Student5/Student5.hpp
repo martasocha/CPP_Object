@@ -2,6 +2,7 @@
 #include <string>
 
 class Student {
+
 	class Adress {
 		public:
 			std::string street;

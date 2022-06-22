@@ -6,6 +6,7 @@
 
 
 
+
 Account::Account(AccountType type)
 {
 	this->type = type;

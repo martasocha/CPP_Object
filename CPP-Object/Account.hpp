@@ -14,12 +14,12 @@ class Account {
 	std::string generateBankNumber();
 	
 public:
-	AccountType type;
+	static AccountType type;
 	Account(AccountType type); //konstruktor
 	//Account(int type);
 	std::string showBankNumber();
 	int withdraw(int amount);
 	void deposit(int amount);
 	int getBalance();
-	int showAccountCosts();
+	static int showAccountCosts();
 };

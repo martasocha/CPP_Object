@@ -1,0 +1,3 @@
+﻿  RefAndPointer.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\RefAndPointer\RefAndPointer.cpp(59,16): warning C4154: deletion of an array expression; conversion to pointer supplied
+  RefAndPointer.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\x64\Debug\RefAndPointer.exe
