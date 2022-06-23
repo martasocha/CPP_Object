@@ -16,7 +16,29 @@ MyString::MyString(char* input)
 	{
 		*(arr + i) = *(input + i);
 	}
+	arr[lenght] = '\0';
 }
+
+MyString::MyString(const MyString& other)
+{
+	this->arr = new char[std::strlen(other.arr) + 1];
+	for (int i = 0; i < std::strlen(this->arr); i++)
+	{
+		this->arr[i] = other.arr[i];
+	}
+	this->arr[std::strlen(other.arr)] = '\0';
+}
+
+//MyString& MyString::operator=(MyString other)
+//{
+//	this->arr = new char[std::strlen(other.arr) + 1];
+//	for (int i = 0; i < std::strlen(other.arr); ++i)
+//	{
+//		this->arr[i] = other.arr[i];
+//	}
+//	this->arr[std::strlen(other.arr)]
+//	return 
+//}
 
 MyString::~MyString()
 {
@@ -46,7 +68,7 @@ MyString MyString::append(char* input)
 	}
 
 	*(result + lenght) = '\0';
-	return MyString(result);
+	return MyString(result); // opakowujemy nasz char*
 
 	////////////
 	//int length1 = std::strlen(arr); //zlicza dugo pierwszej tablicy - 3
@@ -92,7 +114,7 @@ void MyString::appendToSame(char* input)
 
 MyString MyString::append(MyString input)
 {
-	MyString result = append(input.arr);
+	MyString result = this->append(input.arr); //wywolujemy metode na rzecz obiektru w ktorym jestesmy, dobieramy sie do pola *arr w input!
 
 	return result;
 	// return append(input.arr);
@@ -135,4 +157,5 @@ MyString MyString::firstWord()
 	MyString newString(firstWord);
 	delete[] firstWord;
 	return newString;
+
 }

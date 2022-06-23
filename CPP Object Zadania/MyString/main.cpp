@@ -15,19 +15,19 @@ int main()
 	alaMaKota.print(); // Ala ma kota
 	alaMaKotaAKotMa.print(); //Ala ma kota, a kot ma
 
-	MyString first = alaMaKota.firstWord();
-	first.print();
+	//MyString first = alaMaKota.firstWord();
+	//first.print();
 
-	//char arr[] = { 'A', 'l', 'e', '\0' };
-	//MyString ale(arr);
-	//ale.print(); //Ale
-	//MyString full = alaMaKotaAKotMa.append(ale);
-	//full.print(); //Ala ma kota a kot ma Ale
+	char arr[] = { 'A', 'l', 'e', '\0' };
+	MyString ale(arr);
+	ale.print(); //Ale
+	MyString full = alaMaKotaAKotMa.append(ale);
+	full.print(); //Ala ma kota a kot ma Ale
 
-	MyString olaIlalaOli((char*)"Ola i lala Oli");
-	olaIlalaOli.print();
-	olaIlalaOli.appendToSame((char*)". Ala i As Ali.");
-	olaIlalaOli.print();
+	//MyString olaIlalaOli((char*)"Ola i lala Oli");
+	//olaIlalaOli.print();
+	//olaIlalaOli.appendToSame((char*)". Ala i As Ali.");
+	//olaIlalaOli.print();
 
 	//MyString ToAla((char*)"To Ala.");
 	//ToAla.appendToSame((char*)". A to Ola.");

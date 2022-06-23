@@ -1,10 +1,10 @@
 ﻿  main.cpp
   MyString.cpp
 C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(12,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(33,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(34,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(71,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(72,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(108,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(44,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(45,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(82,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(83,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\MyString\MyString.cpp(119,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   MyString.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\x64\Debug\MyString.exe
