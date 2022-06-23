@@ -8,8 +8,8 @@ class MyString
 public:
 	MyString();
 	MyString(char* input);
-	//MyString(const MyString& other);
-	MyString& operator=(MyString other);
+	MyString(const MyString& other);
+	//MyString& operator=(MyString other);
 	virtual ~MyString();
 	//std::ostream& oparator<<(std::otream& s, const )
 	void print();
