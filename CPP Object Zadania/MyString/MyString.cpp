@@ -9,8 +9,8 @@ MyString::MyString()
 
 MyString::MyString(char* input)
 {
-	int lenght = std::strlen(input) + 1;
-	this->arr = new char[lenght];
+	int lenght = std::strlen(input);
+	this->arr = new char[lenght + 1];
 	//this->arr = input; //uzalezniamy sie od tablicy zarzadzanej przez obiekt zew
 	for (int i = 0; i < lenght; ++i)
 	{

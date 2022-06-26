@@ -1,0 +1,5 @@
+﻿  main.cpp
+  Mastermind.cpp
+C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\Mastermind\Mastermind.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  Mastermind.vcxproj -> C:\Users\mkandyba.MPD1\source\repos\CPP-Object\CPP Object Zadania\x64\Debug\Mastermind.exe
