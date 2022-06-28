@@ -67,7 +67,6 @@ void Wordle::test(std::string guess)
 
 void Wordle::draw()
 {
-
     for (int i = 0; i < attempt; ++i) //6 bo mamy 6 wierszy
     {
         std::cout << guesses[i] << '\t';
@@ -75,18 +74,18 @@ void Wordle::draw()
         for (int j = 0; j < 5; ++j)
         {
             if (answers[i][j] == 'G')
-                printOnScreen('G', 32);
+                printOnScreen('G', Color::GREEN);
             else if (answers[i][j] == 'B')
-                printOnScreen('B', 30);
+                printOnScreen('B', Color::BLUE);
             else if (answers[i][j] == 'O')
-                printOnScreen('0', 33);
+                printOnScreen('0', Color::ORANGE);
         }
         std::cout << std::endl;
     }
     std::cout << std::endl;
 }
 
-void Wordle::printOnScreen(char c, int color)
+void Wordle::printOnScreen(char c, enum class Color color)
 {
     if (c == 'G')
         std::cout << "\033[1;32mG\033[0m";
