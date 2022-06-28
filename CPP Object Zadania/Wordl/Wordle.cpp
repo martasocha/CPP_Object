@@ -22,6 +22,7 @@ char Wordle::findIfExists(char c)
 }
 
 
+
 void Wordle::test(std::string guess)
 {
     answers[attempt] = std::string(5,'B');
@@ -41,16 +42,59 @@ void Wordle::test(std::string guess)
 }
 
 
+//void Wordle::draw()
+//{
+//    
+//    for (int i = 0; i < attempt; ++i) //6 bo mamy 6 wierszy
+//    {
+//        std::cout << guesses[i] << '\t';
+//
+//        for (int j = 0; j < 5; ++j)
+//        {
+//            if (answers[i][j] == 'G')
+//            {
+//                std::cout << "\033[1;32mG\033[0m";
+//            }
+//            else if (answers[i][j] == 'B')
+//                std::cout << "\033[1;30mB\033[0m";
+//            else if (answers[i][j] == 'O')
+//                std::cout << "\033[1;33mO\033[0m";
+//        }
+//        std::cout << std::endl;
+//    }
+//    std::cout << std::endl;
+//}
+
 void Wordle::draw()
 {
 
-    for (int i = 0; i < 6; ++i) //6 bo mamy 6 wierszy
+    for (int i = 0; i < attempt; ++i) //6 bo mamy 6 wierszy
     {
-        std::cout << guesses[i] << '\t' << answers[i] << std::endl;
-    }
+        std::cout << guesses[i] << '\t';
 
+        for (int j = 0; j < 5; ++j)
+        {
+            if (answers[i][j] == 'G')
+                printOnScreen('G', 32);
+            else if (answers[i][j] == 'B')
+                printOnScreen('B', 30);
+            else if (answers[i][j] == 'O')
+                printOnScreen('0', 33);
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
 }
 
+void Wordle::printOnScreen(char c, int color)
+{
+    if (c == 'G')
+        std::cout << "\033[1;32mG\033[0m";
+    else if (c == 'B')
+        std::cout << "\033[1;30mB\033[0m";
+    else if (c == 'O')
+        std::cout << "\033[1;mO\033[0m";
+}
 
 bool Wordle::isFinished()
 {
@@ -58,3 +102,4 @@ bool Wordle::isFinished()
         return false;
     return (attempt == 6 || answers[attempt - 1] == "GGGGG");
 }
+
