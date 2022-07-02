@@ -41,7 +41,7 @@ void Wordle::test(std::string guess)
     attempt++;
 }
 
-
+//
 //void Wordle::draw()
 //{
 //    
@@ -78,7 +78,7 @@ void Wordle::draw()
             else if (answers[i][j] == 'B')
                 printOnScreen('B', Color::BLUE);
             else if (answers[i][j] == 'O')
-                printOnScreen('0', Color::ORANGE);
+                printOnScreen('O', Color::ORANGE);
         }
         std::cout << std::endl;
     }
@@ -92,7 +92,7 @@ void Wordle::printOnScreen(char c, enum class Color color)
     else if (c == 'B')
         std::cout << "\033[1;30mB\033[0m";
     else if (c == 'O')
-        std::cout << "\033[1;mO\033[0m";
+        std::cout << "\033[1;33mO\033[0m";
 }
 
 bool Wordle::isFinished()
