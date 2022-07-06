@@ -52,7 +52,7 @@ int main()
 
 	std::cout << std::endl;
 	//wypisywania
-	s3.printAllCourses();
+	//s3.printAllCourses();
 	maths.printAllStudents();
 
 

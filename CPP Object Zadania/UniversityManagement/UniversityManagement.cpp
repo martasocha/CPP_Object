@@ -142,7 +142,11 @@ CourseList::CourseList()
 
 CourseList::~CourseList()
 {
-	delete[] courses;
+	if (courses != nullptr)
+	{
+		delete[] courses;
+		courses = nullptr;
+	}
 }
 
 void StudentList::add(Student* object)
@@ -192,5 +196,9 @@ StudentList::StudentList()
 
 StudentList::~StudentList()
 {
-	delete[] students;
+	if (students != nullptr)
+	{
+		delete[] students;
+		students = nullptr;
+	}
 }

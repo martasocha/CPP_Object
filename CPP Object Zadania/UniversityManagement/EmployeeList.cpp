@@ -50,5 +50,9 @@ EmployeeList::EmployeeList()
 
 EmployeeList::~EmployeeList()
 {
-	delete[] staff;
+	if (staff != nullptr)
+	{
+		delete[] staff;
+		staff = nullptr;
+	}
 }
