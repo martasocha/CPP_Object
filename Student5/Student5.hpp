@@ -1,14 +1,29 @@
+/// Agregacja
+
 #pragma once
 #include <string>
 
-class Student {
+class Adress {
+public:
+	Adress();
+	Adress(std::string street, int houseNo);
+	std::string _street;
+	int _houseNo;
+	void setStreet(std::string street);
+	void setHouseNo(int houseNo);
+	std::string getStreet();
+	int getHouseNo();
+};
 
-	class Adress {
-		public:
-			std::string street;
-			int houseNo;
-	};
+
+class Student {
 	Adress adress;
 public:
-	Student(std::string street, int houseNo);
+	Student(Adress& adress);
+};
+
+class Professor {
+	Adress adress;
+public:
+	Professor(Adress& adress);
 };

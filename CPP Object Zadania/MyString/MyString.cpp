@@ -19,15 +19,7 @@ MyString::MyString(char* input)
 	arr[lenght] = '\0';
 }
 
-MyString::MyString(const MyString& other)
-{
-	this->arr = new char[std::strlen(other.arr) + 1];
-	for (int i = 0; i < std::strlen(this->arr); i++)
-	{
-		this->arr[i] = other.arr[i];
-	}
-	this->arr[std::strlen(other.arr)] = '\0';
-}
+
 
 //MyString& MyString::operator=(MyString other)
 //{
